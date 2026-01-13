@@ -1,16 +1,73 @@
-# React + Vite
+# SKCF Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React website built with Vite for the SKCF (social kids' charity foundation) showcasing the project's mission, activities, and ways to contribute.
 
-Currently, two official plugins are available:
+This repo uses:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- Bootstrap (CSS) and Bootstrap Icons
+- react-router-dom for client routing
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+Prerequisites:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (16+ recommended)
+
+Setup and run locally:
+
+```bash
+# install dependencies
+npm install
+
+# run dev server (Vite)
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+Linting:
+
+```bash
+npm run lint
+```
+
+---
+
+## Project Structure (important files)
+
+- `src/main.jsx` — app entry (Bootstrap CSS & icons imported here)
+- `src/App.jsx` — routes and layout (Navbar, Footer)
+- `src/pages/` — page components (`Home.jsx`, `Activities.jsx`)
+- `src/components/` — reusable UI components
+
+---
+
+## Notes
+
+- The project uses Bootstrap for layout and components; ensure `bootstrap` and `bootstrap-icons` are installed (they are listed in `package.json`).
+- If you clone the repo and see errors, try running `npm install` then `npm run dev` and check the terminal for diagnostics.
+
+---
+
+## Contributing
+
+Contributions welcome — send a PR or open an issue to propose improvements.
+
+---
+
+## License
+
+MIT
