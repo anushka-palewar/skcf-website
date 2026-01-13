@@ -1,0 +1,18 @@
+:root {
+  --sk-primary: #0d6efd;
+  --sk-success: #198754;
+  --sk-warning: #ffc107;
+}
+
+.display-4 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12) !important;
+}
